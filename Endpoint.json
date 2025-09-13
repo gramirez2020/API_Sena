@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "08120031-bb0f-403a-96ca-5bb691a85ab1",
+		"name": "Sena",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48408372",
+		"_collection_link": "https://www.postman.com/geraldineluciaramirezalfonso-7331312/sena-servicios/collection/5kt89rm/sena?action=share&source=collection_link&creator=48408372"
+	},
+	"item": [
+		{
+			"name": "Consultar-Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logueo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"correo\": \"dquimbayo@pruebasena.com\",\r\n        \"contraseña\": \"dquimb123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar-Usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"nombre\": \"David Quimbayo\",\r\n        \"correo\": \"dquimbayo@pruebasena.com\",\r\n        \"contraseña\": \"dquimb123\",\r\n        \"rol\": \"Optómetra\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
